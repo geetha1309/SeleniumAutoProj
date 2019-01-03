@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+
+ <listeners>
+ 	<listener class-name="com.test.automation.AutomationProject.customlistener.Listener"></listener>
+ 	<listener class-name="com.test.automation.AutomationProject.customlistener.RetryListener"></listener>
+ 	
+ </listeners>
+  
+  <test name="HomePage">
+    <classes>
+      <class name="com.test.automation.AutomationProject.homepage.TC001_VerifyLoginWithInvalidCredentials"/>
+    </classes>
+  </test> <!-- HomePage -->
+</suite> <!-- RegressionSuite -->
